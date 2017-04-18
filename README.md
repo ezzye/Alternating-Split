@@ -1,3 +1,5 @@
+
+
 # Alternating-Split
 Simple Encryption #1
 
@@ -18,3 +20,8 @@ If the input-string is null or empty return exactly this value!
 If n is <= 0 then return the input text.
 
 Use https://maven.apache.org/guides/getting-started/index.html for maven
+
+mvn -B archetype:generate \
+  -DarchetypeGroupId=org.apache.maven.archetypes \
+  -DgroupId=com.itshackney.app \
+  -DartifactId=alternatingSplit
