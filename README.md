@@ -25,3 +25,16 @@ mvn -B archetype:generate \
   -DarchetypeGroupId=org.apache.maven.archetypes \
   -DgroupId=com.itshackney.app \
   -DartifactId=alternatingSplit
+  
+Use following packages for tests:
+  import org.junit.Test;
+  import static org.junit.Assert.assertEquals;
+  
+Run tests:
+  mvn -Dtest=ExampleGame test -f ${current.project.path}
+  
+Compile test code:
+  mvn test-compile -f ${current.project.path}
+  
+build:
+  mvn clean install -f ${current.project.path}
